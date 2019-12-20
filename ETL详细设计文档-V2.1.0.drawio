@@ -1,4 +1,4 @@
-<mxfile modified="2019-12-20T11:33:57.048Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="DpypDe5xwaZnGfP_RJ2S" version="12.4.3" type="github" pages="3">
+<mxfile modified="2019-12-20T11:37:15.916Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="bi4BTBNHLSCkYB7GaZgp" version="12.4.3" type="github" pages="3">
   <diagram id="-X4iHLIYIGsj5PxfE0q1" name="CSVLineSplitProcessor">
     <mxGraphModel dx="1182" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,7 +103,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="CacheBuildAnalyser" id="EPLHQUuei7vCuElKDvf8">
-    <mxGraphModel dx="1182" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-0"/>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-1" parent="H7ooW2e-7gJWST4jmUaG-0"/>
@@ -125,7 +125,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="H7ooW2e-7gJWST4jmUaG-6" value="配置检查" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#000000;strokeColor=#808080;labelBorderColor=none;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
+        <mxCell id="H7ooW2e-7gJWST4jmUaG-6" value="配置检查" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;labelBorderColor=none;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="335.5" y="260" width="95" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-7" value="任意输入" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;labelBorderColor=none;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
@@ -157,13 +157,13 @@
         <mxCell id="uAvVv-uClDMMrpR0Bvbr-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="H7ooW2e-7gJWST4jmUaG-15" target="uAvVv-uClDMMrpR0Bvbr-4">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="H7ooW2e-7gJWST4jmUaG-15" value="从消息中指定字段获取缓存的Key" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
+        <mxCell id="H7ooW2e-7gJWST4jmUaG-15" value="从消息的指定字段获取缓存的Key" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="328" y="730" width="110" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-18" value="输入消息队列" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="343" y="390" width="80" height="75" as="geometry"/>
         </mxCell>
-        <mxCell id="H7ooW2e-7gJWST4jmUaG-19" value="文件处理结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;fontColor=#808080;align=center;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
+        <mxCell id="H7ooW2e-7gJWST4jmUaG-19" value="缓存构建结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;fontColor=#808080;align=center;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="325.5" y="1059" width="115" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="uAvVv-uClDMMrpR0Bvbr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-0" target="H7ooW2e-7gJWST4jmUaG-11">
@@ -175,15 +175,14 @@
         <mxCell id="uAvVv-uClDMMrpR0Bvbr-8" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-4" target="uAvVv-uClDMMrpR0Bvbr-7">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="uAvVv-uClDMMrpR0Bvbr-13" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-4" target="H7ooW2e-7gJWST4jmUaG-19">
+        <mxCell id="uAvVv-uClDMMrpR0Bvbr-13" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-4" target="uAvVv-uClDMMrpR0Bvbr-16">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="461" y="870"/>
-              <mxPoint x="461" y="1089"/>
+              <mxPoint x="545" y="870"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uAvVv-uClDMMrpR0Bvbr-4" value="Key不为空" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#000000;strokeColor=#808080;labelBorderColor=none;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
+        <mxCell id="uAvVv-uClDMMrpR0Bvbr-4" value="Key不为空" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;labelBorderColor=none;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="335.5" y="830" width="95" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="uAvVv-uClDMMrpR0Bvbr-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-7" target="H7ooW2e-7gJWST4jmUaG-19">
@@ -191,6 +190,18 @@
         </mxCell>
         <mxCell id="uAvVv-uClDMMrpR0Bvbr-7" value="添加消息至缓存中" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
           <mxGeometry x="328" y="950" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uAvVv-uClDMMrpR0Bvbr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="H7ooW2e-7gJWST4jmUaG-1" source="uAvVv-uClDMMrpR0Bvbr-16" target="H7ooW2e-7gJWST4jmUaG-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="545" y="1090"/>
+              <mxPoint x="465" y="1090"/>
+              <mxPoint x="465" y="1089"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAvVv-uClDMMrpR0Bvbr-16" value="打印日志，提示Key为空导致无法加入缓存" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="H7ooW2e-7gJWST4jmUaG-1">
+          <mxGeometry x="490" y="950" width="110" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
