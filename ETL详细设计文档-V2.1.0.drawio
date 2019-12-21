@@ -1,6 +1,6 @@
-<mxfile modified="2019-12-21T03:58:33.931Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="mix-xbiKPEtLDbDvIUG_" version="12.4.3" type="github" pages="3">
+<mxfile modified="2019-12-21T07:32:03.024Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="w46lVMLIwNgCUil0a3eT" version="12.4.3" type="github" pages="4">
   <diagram id="-X4iHLIYIGsj5PxfE0q1" name="CSVLineSplitProcessor">
-    <mxGraphModel dx="942" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="F0e3yNXXzythtXrKu55G-0"/>
         <mxCell id="F0e3yNXXzythtXrKu55G-1" parent="F0e3yNXXzythtXrKu55G-0"/>
@@ -103,7 +103,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="CacheBuildAnalyser" id="EPLHQUuei7vCuElKDvf8">
-    <mxGraphModel dx="942" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-0"/>
         <mxCell id="H7ooW2e-7gJWST4jmUaG-1" parent="H7ooW2e-7gJWST4jmUaG-0"/>
@@ -207,7 +207,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="CacheMatchAnalyser" id="qa-G6y6ZAmrwd6hHT9OX">
-    <mxGraphModel dx="942" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="Jb1CrBv7T-m11i_zvxmi-0"/>
         <mxCell id="Jb1CrBv7T-m11i_zvxmi-1" parent="Jb1CrBv7T-m11i_zvxmi-0"/>
@@ -318,6 +318,196 @@
         </mxCell>
         <mxCell id="GL9iZjJbd6sv2eq8-wSj-0" value="1. _cache_match_flag：标识匹配成功&lt;br&gt;2. _cache_match_list :&amp;nbsp;匹配结果（List&amp;lt;Map&amp;lt;String,Object&amp;gt;）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;labelBorderColor=none;strokeColor=#808080;align=left;horizontal=1;verticalAlign=top;" vertex="1" parent="Jb1CrBv7T-m11i_zvxmi-1">
           <mxGeometry x="10" y="955" width="340" height="70" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Parquet动态输出插件" id="ynK3udeeatffPEY7nAbE">
+    <mxGraphModel dx="1884" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ml6gNsncAip6iqgf1B51-0"/>
+        <mxCell id="ml6gNsncAip6iqgf1B51-1" parent="ml6gNsncAip6iqgf1B51-0"/>
+        <mxCell id="ml6gNsncAip6iqgf1B51-2" value="Parquet动态输出插件&lt;br&gt;（HdfsParquetDynamicOutputPlugin）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;labelBackgroundColor=#0066CC;gradientColor=none;fillColor=#0066CC;fontColor=#FFFFFF;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="35" y="20" width="1035" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-32" value="1. 输出消息队列按行存储消息，数据结构为Map&amp;lt;String,Object&amp;gt;&lt;br&gt;&lt;br&gt;2.&amp;nbsp;每条消息内容包括：数据库名、数据表名、字段名、数据版本、字段值、分区字段值、自定义字段值" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#FFFFFF;strokeColor=#808080;fillColor=#FFFFFF;fontColor=#808080;gradientColor=none;labelBorderColor=none;align=left;fontSize=12;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="35" y="190" width="270" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-34" target="ml6gNsncAip6iqgf1B51-32">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-34" target="ml6gNsncAip6iqgf1B51-37">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-34" value="输出消息队列" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="349.5" y="222.5" width="97" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-37" target="ml6gNsncAip6iqgf1B51-40">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-37" target="ml6gNsncAip6iqgf1B51-45">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-37" value="生成入库字段名和字段值" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="342.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-40" target="ml6gNsncAip6iqgf1B51-44">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-40" target="ml6gNsncAip6iqgf1B51-43">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-40" value="动态创建writer" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="482.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-43" target="ml6gNsncAip6iqgf1B51-58">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-43" target="ml6gNsncAip6iqgf1B51-48">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-43" value="写入数据" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="622.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-44" value="1.&amp;nbsp;由于不同的数据库、数据表、分区、版本，其所对应的数据写入HDFS的路径以及Schema信息都不一样，所以按照这些信息来创建writer，保证每个writer处理的是同一种类型的数据。&lt;br&gt;2.&amp;nbsp;writer设置有超时回收机制，如果某种类型的数据在指定时间内都没有写入，对应的writer就会自动回收。" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#FFFFFF;strokeColor=#808080;fillColor=#FFFFFF;fontColor=#808080;gradientColor=none;labelBorderColor=none;align=left;fontSize=12;strokeWidth=2;verticalAlign=top;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="555" y="451.75" width="363.5" height="121.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-45" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;1. 拼接数据文件中的字段和自定义的字段，生成最终需要入库的字段名和字段值&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#FFFFFF;strokeColor=#808080;fillColor=#FFFFFF;fontColor=#808080;gradientColor=none;labelBorderColor=none;align=left;fontSize=12;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="555" y="342.5" width="360" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-47" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-48" target="ml6gNsncAip6iqgf1B51-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-130" y="1975.3571428571427" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="30" y="783"/>
+              <mxPoint x="30" y="1963"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RUmOeSz7Xi3eiO1gnY4p-5" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-48" target="RUmOeSz7Xi3eiO1gnY4p-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-48" value="是否动态更新数据表" style="rhombus;whiteSpace=wrap;html=1;fontColor=#808080;strokeColor=#808080;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;fontSize=12;labelBorderColor=none;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="322" y="742.5" width="152" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-49" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-51" target="ml6gNsncAip6iqgf1B51-57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-50" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-51" target="ml6gNsncAip6iqgf1B51-54">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-51" value="缓存中是否存在表名" style="rhombus;whiteSpace=wrap;html=1;fontColor=#808080;strokeColor=#808080;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="334.5" y="992.5" width="127" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-52" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-54" target="ml6gNsncAip6iqgf1B51-70">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-53" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-54" target="ml6gNsncAip6iqgf1B51-72">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-54" value="数据库中是否存在表" style="rhombus;whiteSpace=wrap;html=1;fontColor=#808080;strokeColor=#808080;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="590" y="1015" width="165" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-55" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-57" target="ml6gNsncAip6iqgf1B51-62">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="401.5" y="1327.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-56" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-57" target="ml6gNsncAip6iqgf1B51-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540.5" y="1432.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-57" value="消息中所有字段是否在缓存中" style="rhombus;whiteSpace=wrap;html=1;fontColor=#808080;strokeColor=#808080;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="307.5" y="1292.5" width="181" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-58" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;1.&amp;nbsp;调用writer.write()方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;2. 通过消息中的信息，判断是否需要创建库表，是否需要更新字段以及创建schema&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#FFFFFF;strokeColor=#808080;fillColor=#FFFFFF;fontColor=#808080;gradientColor=none;labelBorderColor=none;align=left;fontSize=12;verticalAlign=top;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="25" y="611.25" width="240" height="82.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-60" value="数据表缓存：&lt;br&gt;数据结构：Map&amp;lt;String,String[]&amp;gt;&lt;br&gt;Key：数据库名+表名拼接成的字符串&lt;br&gt;Value：表所对应的字段名数组" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;fontColor=#808080;strokeColor=#808080;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=none;fontSize=12;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="550" y="863.75" width="237" height="87.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-62" target="ml6gNsncAip6iqgf1B51-64">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-62" value="通过JDBC给数据表添加字段" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="638" y="1392.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-64" target="ml6gNsncAip6iqgf1B51-66">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-64" value="通过JDBC获取数据表Schema，更新到缓存" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="638" y="1522.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-66" target="ml6gNsncAip6iqgf1B51-82">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-66" value="创建表字段和所在列对应关系缓存" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="1652.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-68" target="ml6gNsncAip6iqgf1B51-66">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-68" value="表字段与列对应关系缓存结构：Map&amp;lt;Stinrg,Integer&amp;gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;Key：字段名&lt;br style=&quot;font-size: 12px;&quot;&gt;Value：字段对应列的序号" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;fontColor=#808080;strokeColor=#808080;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=none;fontSize=12;verticalAlign=top;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="50" y="1637.5" width="190" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-70" target="ml6gNsncAip6iqgf1B51-57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-70" value="通过JDBC获取数据表Schema，更新到缓存中" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="571.5" y="1150" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="RUmOeSz7Xi3eiO1gnY4p-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-72" target="ml6gNsncAip6iqgf1B51-66">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="951" y="1683"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-72" value="创建数据表，并添加到缓存" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="850" y="1140" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-75" target="ml6gNsncAip6iqgf1B51-80">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-75" target="ml6gNsncAip6iqgf1B51-77">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-75" value="创建ParquetWriter" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="1932.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-77" target="ml6gNsncAip6iqgf1B51-83">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-77" value="数据写入到Parquet文件中" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="2072.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-80" value="&lt;div&gt;1.&amp;nbsp;根据输出路径，字段名、字段类型等信息，生成ParquetWriter。&lt;/div&gt;&lt;span style=&quot;text-align: center&quot;&gt;用于写入数据到Parquet文件中&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#FFFFFF;strokeColor=#808080;fillColor=#FFFFFF;fontColor=#808080;gradientColor=none;labelBorderColor=none;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="608.5" y="1926.25" width="310" height="72.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="ml6gNsncAip6iqgf1B51-82" target="ml6gNsncAip6iqgf1B51-75">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-82" value="按照表内字段顺序，重新对消息字段值进行排序" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="1797.5" width="202" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ml6gNsncAip6iqgf1B51-83" value="输出完成" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;labelBorderColor=none;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="321" y="2180" width="153" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6jLMpF0KSZK_RerfbFWe-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="6jLMpF0KSZK_RerfbFWe-0" target="ml6gNsncAip6iqgf1B51-34">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="6jLMpF0KSZK_RerfbFWe-0" value="Parquet动态输出开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;labelBorderColor=none;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="332" y="90" width="132" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="RUmOeSz7Xi3eiO1gnY4p-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="RUmOeSz7Xi3eiO1gnY4p-3" target="ml6gNsncAip6iqgf1B51-60">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="RUmOeSz7Xi3eiO1gnY4p-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#808080;" edge="1" parent="ml6gNsncAip6iqgf1B51-1" source="RUmOeSz7Xi3eiO1gnY4p-3" target="ml6gNsncAip6iqgf1B51-51">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="RUmOeSz7Xi3eiO1gnY4p-3" value="获取数据表缓存" style="whiteSpace=wrap;html=1;absoluteArcSize=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;fontSize=12;fontColor=#808080;strokeColor=#808080;" vertex="1" parent="ml6gNsncAip6iqgf1B51-1">
+          <mxGeometry x="297" y="877.5" width="202" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
