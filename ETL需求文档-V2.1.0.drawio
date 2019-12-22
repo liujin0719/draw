@@ -1,4 +1,4 @@
-<mxfile modified="2019-12-22T08:46:08.559Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="jwvCFQcEJfEiWGdMkuCC" version="12.4.3" type="github" pages="5">
+<mxfile modified="2019-12-22T08:58:19.897Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="hQH180x8YvLRPDupTbv5" version="12.4.3" type="github" pages="5">
   <diagram id="vmj1InUa-F-kXhf0yk-W" name=" CSV行切割处理器">
     <mxGraphModel dx="1102" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -317,52 +317,72 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="QK4SYE3_93_N6T92J-37" name="ETL解析模块">
-    <mxGraphModel dx="1102" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+  <diagram name="Parquet动态输出插件" id="QLA6c8afZ9ptkQlskvu9">
+    <mxGraphModel dx="1102" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-0"/>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-1" parent="kBmMX7nffdBsAzFuXpu_-0"/>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-2" value="原始消息事件推送" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;fontColor=#000000;" parent="kBmMX7nffdBsAzFuXpu_-1" source="kBmMX7nffdBsAzFuXpu_-3" target="kBmMX7nffdBsAzFuXpu_-5" edge="1">
+        <mxCell id="_19f8AWKwFTEjqmsnG6Q-0"/>
+        <mxCell id="_19f8AWKwFTEjqmsnG6Q-1" parent="_19f8AWKwFTEjqmsnG6Q-0"/>
+        <mxCell id="_19f8AWKwFTEjqmsnG6Q-33" value="ETL输出消息队列" style="swimlane;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-1">
+          <mxGeometry x="410" y="230" width="190" height="670" as="geometry">
+            <mxRectangle x="410" y="230" width="130" height="23" as="alternateBounds"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_19f8AWKwFTEjqmsnG6Q-34" value="Map&amp;lt;String,Object&amp;gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-33">
+          <mxGeometry x="30" y="130" width="125" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="_19f8AWKwFTEjqmsnG6Q-36" value="ETL输出模块" style="swimlane;fillColor=#b1ddf0;strokeColor=#10739e;startSize=23;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-1">
+          <mxGeometry x="600" y="230" width="190" height="670" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-36" source="MY6n6EPc8C7QuMyyLnmM-0" target="E3P5DDtX3SpEET3hEINZ-0">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-3" value="数据源" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#3399FF;strokeColor=#6c8ebf;fontColor=#FFFFFF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="200" y="210" width="440" height="40" as="geometry"/>
+        <mxCell id="MY6n6EPc8C7QuMyyLnmM-0" value="初始化输出模块" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="40" y="40" width="110" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-4" value="解析前消息事件推送" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=0;fontSize=12;fontColor=#000000;" parent="kBmMX7nffdBsAzFuXpu_-1" source="kBmMX7nffdBsAzFuXpu_-5" target="kBmMX7nffdBsAzFuXpu_-8" edge="1">
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-36" source="E3P5DDtX3SpEET3hEINZ-0" target="E3P5DDtX3SpEET3hEINZ-3">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-5" value="输入消息队列" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="290" y="310" width="260" height="70" as="geometry"/>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-0" value="获取消息" style="whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="35" y="150" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-6" value="ETL解析模块数据流" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="260" y="120" width="320" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-7" value="解析后消息事件推送" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=0;fontSize=12;fontColor=#000000;" parent="kBmMX7nffdBsAzFuXpu_-1" source="kBmMX7nffdBsAzFuXpu_-8" target="kBmMX7nffdBsAzFuXpu_-14" edge="1">
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-36" source="E3P5DDtX3SpEET3hEINZ-3" target="E3P5DDtX3SpEET3hEINZ-13">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-8" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#12AAB5;fontSize=12;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="135" y="450" width="570" height="120" as="geometry"/>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-3" value="Parquet动态输出插件处理" style="whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="35" y="260" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-9" value="URL编解码" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontSize=12;fontColor=#FFFFFF;rounded=0;strokeColor=#6c8ebf;fillColor=#3399FF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="155" y="480" width="120" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-10" value="IP段匹配解析" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontSize=12;fontColor=#FFFFFF;rounded=0;strokeColor=#6c8ebf;fillColor=#3399FF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="293" y="480" width="120" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-11" value="中文乱码检测" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontSize=12;fontColor=#FFFFFF;rounded=0;strokeColor=#6c8ebf;fillColor=#3399FF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="429" y="480" width="120" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-12" value="不定字段个数" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontSize=12;fontColor=#FFFFFF;rounded=0;strokeColor=#6c8ebf;fillColor=#3399FF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="565" y="480" width="120" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-13" value="输出消息事件推送" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=0;fontSize=12;fontColor=#000000;" parent="kBmMX7nffdBsAzFuXpu_-1" source="kBmMX7nffdBsAzFuXpu_-14" target="kBmMX7nffdBsAzFuXpu_-15" edge="1">
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-36" source="E3P5DDtX3SpEET3hEINZ-13" target="E3P5DDtX3SpEET3hEINZ-15">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-14" value="输出消息队列" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="290" y="650" width="260" height="70" as="geometry"/>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-13" value="动态创建或更新Imapala数据表" style="whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="35" y="360" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="kBmMX7nffdBsAzFuXpu_-15" value="存储数据" style="shape=dataStorage;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=12;fillColor=#3399FF;strokeColor=#6c8ebf;rounded=0;fontColor=#FFFFFF;" parent="kBmMX7nffdBsAzFuXpu_-1" vertex="1">
-          <mxGeometry x="140" y="770" width="560" height="50" as="geometry"/>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-36" source="E3P5DDtX3SpEET3hEINZ-15" target="E3P5DDtX3SpEET3hEINZ-20">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-15" value="&lt;span style=&quot;white-space: normal&quot;&gt;输出Parquet文件&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="35" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-20" value="输出结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-36">
+          <mxGeometry x="40" y="580" width="110" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-1" source="_19f8AWKwFTEjqmsnG6Q-34" target="E3P5DDtX3SpEET3hEINZ-0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-5" value="HDFS" style="swimlane;fillColor=#b1ddf0;strokeColor=#10739e;startSize=23;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-1">
+          <mxGeometry x="790" y="230" width="190" height="670" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-12" value="Parquet文件" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;fontColor=#000000;fillColor=#CCE5FF;" vertex="1" parent="E3P5DDtX3SpEET3hEINZ-5">
+          <mxGeometry x="51" y="470" width="88" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-11" value="Impala" style="swimlane;fillColor=#b1ddf0;strokeColor=#10739e;startSize=23;" vertex="1" parent="_19f8AWKwFTEjqmsnG6Q-1">
+          <mxGeometry x="980" y="230" width="190" height="670" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-19" value="Impala" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontColor=#000000;fillColor=#CCE5FF;" vertex="1" parent="E3P5DDtX3SpEET3hEINZ-11">
+          <mxGeometry x="65" y="360" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="E3P5DDtX3SpEET3hEINZ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" edge="1" parent="_19f8AWKwFTEjqmsnG6Q-1" source="E3P5DDtX3SpEET3hEINZ-13" target="E3P5DDtX3SpEET3hEINZ-19">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
